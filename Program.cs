@@ -35,100 +35,6 @@
 //     Console.WriteLine(number);
 // }
 
-//ЗАДАЧА 2
-//Напишите программу, которая принимает на вход 
-//координаты точки (X и Y), причём X ≠ 0 и Y ≠ 0 
-//и выдаёт номер четверти плоскости, в которой 
-//находится эта точка.
-
-// Console.Write("Введите координату по оси Х: ");
-// int x = Convert.ToInt32(Console.ReadLine());
-
-// Console.Write("Введите координату по оси Y: ");
-// int y = Convert.ToInt32(Console.ReadLine());
-// // A(x; y)
-// if (x>0 && y >0)
-// {
-//     Console.WriteLine("Четверть I");
-// }
-// else if (x < 0 && y > 0)
-// {
-//     Console.WriteLine("Четверть: II");
-// }
-// else if (x < 0 && y < 0)
-// {
-//     Console.WriteLine("Четверть: III");
-// }
-// else if (x > 0 && y < 0)
-// {
-//     Console.WriteLine("Четверть: IV");
-// }
-// else
-// {
-//     Console.WriteLine("Попаданиние на ось");
-// }
-
-// ЗАДАЧА 3
-// Напишите программу, которая принимает на вход координаты 
-// двух точек и находит расстояние между ними в 2D пространстве.
-// A (3,6); B (2,1) -> 5,09 
-// A (7,-5); B (1,-1) -> 7,21
-
-
-
-//корень((х1-х2)^2 + (у1-у2)^2)
-//точка А
-// Console.Write("Введите координату точки А по оси Х: ");
-// int x1 = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите координату точки А по оси Y: ");
-// int y1 = Convert.ToInt32(Console.ReadLine());
-// // точка В
-// Console.Write("Введите координату точки В по оси Х: ");
-// int x2 = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите координату точки В по оси Y: ");
-// int y2 = Convert.ToInt32(Console.ReadLine());
-// // AB = корень (х1-х2)^2 + (у1-у2)^2)
-// var result = Math.Sqrt(Math.Pow(x2-x1, 2)+ Math.Pow(y2 -y1, 2));
-// Console.WriteLine($"Результат:{result,f2}");
-
-//Console.WriteLine(Math.Round(result, 3));
-
-
-//Задача 22: Напишите программу, которая принимает 
-//на вход число (N) и выдаёт таблицу квадратов чисел 
-//от 1 до N.
-//5 -> 1, 4, 9, 16, 25.
-//2 -> 1,4
-
-// Console.Write("Введите число N: ");
-// int N = Convert.ToInt32(Console.ReadLine());
-// int i = 1;
-// while (i<=N)
-// {
-//     Console.Write(Math.Pow(i,2)+"\t");
-//     //Литерал
-//     //"\t" = Tab (4 пробела между элементами)
-//     i++;
-// }
-
-
-// Console.Write("Введите число N: ");
-// int N = Convert.ToInt32(Console.ReadLine());
-
-// for (int i=1; i<=N; i++ )
-// {
-//     Console.Write(Math.Pow(i,2)+"\t");
-//     }
-
-// Четные числа от 0 до N включительно
-// Console.Write("Введите число N: ");
-// int N = Convert.ToInt32(Console.ReadLine());
-// for (int i=0; i<=N; i+=2)
-// {
-//     Console.Write(i +"\t");
-//     }
-
-
 
 // Задача 21
 // Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
@@ -156,10 +62,17 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-Console.Write("Введите число N: ");
-int N = Convert.ToInt32(Console.ReadLine());
-// for(начало; условие; увеличение переменной - счетчика)
-for(int i = 1; i <= N; i++)
-{
-    Console.Write(Math.Pow(i, 3) + "\t");
-}
+// Console.Write("Введите число N: ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// // for(начало; условие; увеличение переменной - счетчика)
+// for(int i = 1; i <= N; i++)
+// {
+//     Console.Write(Math.Pow(i, 3) + "\t");
+// }
+
+Задача 19
+Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+14212 -> нет
+12821 -> да
+23432 -> да
+
